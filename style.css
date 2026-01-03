@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    min-height: 100vh;
+}
+
+.header {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #020617, #1e293b);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #38bdf8;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+form {
+    background: #020617;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+}
+
+form h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    background: #020617;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 6px;
+}
+
+button {
+    margin-top: 25px;
+    padding: 14px;
+    width: 100%;
+    background: #38bdf8;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+.result {
+    margin-top: 40px;
+    padding: 30px;
+    background: #020617;
+    border-radius: 12px;
+    display: none;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px;
+    background: #020617;
+    margin-top: 60px;
+}
+
+.socials a {
+    font-size: 2rem;
+    margin: 0 15px;
+    transition: transform 0.2s;
+}
+
+.socials a:hover {
+    transform: scale(1.2);
+}
+
+.socials a[href*="instagram"] {
+    color: #E1306C;
+}
+
+.socials a[href*="tiktok"] {
+    color: #69C9D0;
+}
+
+/* Prevent scrolling on login page */
+body.login-page {
+    overflow: hidden;
+}
+
+body.program-page {
+    overflow: auto;
+}

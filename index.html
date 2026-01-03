@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riad | Professional Training Program Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- LOGIN / SIGNUP PAGE -->
+    <main class="container" id="authContainer">
+        <div id="loginPage">
+            <h2>Login</h2>
+            <label>Username</label>
+            <input type="text" id="loginUsername" required />
+            <label>Password</label>
+            <input type="password" id="loginPassword" required />
+            <button id="loginBtn">Login</button>
+            <p>Don't have an account? <button id="goToSignup">Sign Up</button></p>
+        </div>
+
+        <div id="signupPage" style="display:none;">
+            <h2>Create Account</h2>
+            <label>Username</label>
+            <input type="text" id="signupUsername" required />
+            <label>Password</label>
+            <input type="password" id="signupPassword" required />
+            <button id="signupBtn">Sign Up</button>
+            <p>Already have an account? <button id="goToLogin">Login</button></p>
+        </div>
+    </main>
+
+    <!-- PROGRAM PAGE (hidden by default) -->
+    <main class="container" id="programContainer" style="display:none;">
+        <form id="programForm">
+            <h2>Generate Your Exact Program</h2>
+
+            <label>Name</label>
+            <input type="text" id="name" required />
+
+            <label>Gender</label>
+            <select id="gender">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+
+            <label>Training Level</label>
+            <select id="level">
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
+            </select>
+
+            <label>Height (cm)</label>
+            <input type="number" id="height" required />
+
+            <label>Current Weight (kg)</label>
+            <input type="number" id="currentWeight" required />
+
+            <label>Target Weight (kg)</label>
+            <input type="number" id="targetWeight" required />
+
+            <label>Training Days per Week</label>
+            <select id="days">
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+
+            <label>Main Goal</label>
+            <select id="goal">
+                <option>Fat Loss</option>
+                <option>Lean Muscle Gain</option>
+                <option>Bulking</option>
+                <option>Recomposition</option>
+            </select>
+
+            <button type="submit">Generate My Program</button>
+            <button type="button" id="downloadProgramBtn">Download Program as Image</button>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+        </form>
+
+        <section id="result" class="result"></section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 Riad Training System</p>
+        <div class="socials">
+            <a href="https://www.instagram.com/theonlyriad" target="_blank" class="instagram"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@theonlyriad" target="_blank" class="tiktok"><i
+                    class="fab fa-tiktok"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
